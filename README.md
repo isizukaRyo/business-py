@@ -14,7 +14,7 @@ df = pd.read_csv('任意のCSVファイル')
 ここでは行の合計を計算し降順に並べ、新しい列を作成し格納しています。<br>
 新しく追加する列の名前は任意で決めてください。<br>
 
-df = pd.concat([df,pd.DataFrame(df.sum(axis=1),columns=['任意で決めてください。'])],axis=1)
+df = pd.concat([df,pd.DataFrame(df.sum(axis=1),columns=['任意で決めてください。'])],axis=1)<br>
 df_s = df.sort_values('任意で決めたものと同じになるように', ascending=False)
 
 <降順を解除したい場合><br>
