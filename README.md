@@ -11,8 +11,8 @@ df = pd.read_csv('任意のCSVファイル')
 
 手順:2<br>
 Grcで取得したものでエクセルのBの列に自動的に生成させる'Unnamed 0'の名前を'id'に変更しております。
-この'id'は任意で名前を変更して大丈夫です。
-df = df.rename(columns={'Unnamed: 0':'id'})
+この'id'は任意で名前を変更して大丈夫です。<br>
+df = df.rename(columns={'Unnamed: 0':'id'})<br>
 ※macでwindowsのcsvを表示した際に'Unnamed 0'が二つ出力されたため名前を変更する
 コードを追加いたしました。
 
