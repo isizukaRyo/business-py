@@ -17,5 +17,5 @@ df = pd.concat([df,pd.DataFrame(df.sum(axis=1),columns=['Total'])],axis=1)
 df_s = df.sort_values('Total', ascending=False)
 #表示する行を指定   
 #この場合は3行目まで出る
-print(df_s[1:4])
+df_s[1:4].to_csv('employee.csv')
 
